@@ -20,7 +20,7 @@ function breadcrumb( $args = array() ) {
     $setting = array();
     $defaults = array(
         'wrapper_elm'   => 'ol',
-        'wrapper_class' => 'braedcrumb',
+        'wrapper_class' => 'breadcrumb',
         'item_elm'      => 'li',
         'text_home'     => 'Home'
     );
@@ -35,7 +35,7 @@ function breadcrumb( $args = array() ) {
     // main
     $str ='';
     if( !is_home() && !is_front_page() ) {
-        $wrapper_class = empty($setting['wrapper_class']) ? '' : ' class="' . $setting['wrapper_elm'] . '"';
+        $wrapper_class = empty($setting['wrapper_class']) ? '' : ' class="' . $setting['wrapper_class'] . '"';
         $str .= '<' . $setting['wrapper_elm'] . $wrapper_class . '>';
         $str .= '<' . $setting['item_elm'] . '><a href="' . home_url() . '">' . $setting['text_home'] . '</a></' . $setting['item_elm'] . '>';
         if( is_category() ) {

@@ -8,5 +8,12 @@
             トップに戻るか、サイト内検索をお試しください。
         </p>
         <p><a href="<?php echo home_url(); ?>">トップに戻る</a></p>
+        <?php /* in ENGLISH
+        <h2>The page you are looking for was not found.</h2>
+        <p>
+            The page you are looking for may have been temporarily inaccessible, moved or deleted.
+        </p>
+        <p><a href="<?php echo home_url(); ?>">Back to Top Page</a></p>
+        */ ?>
     </main>
 <?php get_footer(); ?>
